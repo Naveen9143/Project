@@ -1,0 +1,14 @@
+.logo{
+    background-color: 071a33;
+}
+aside{
+    background-color:rgb(113, 204, 207);
+}
+li:hover{
+    font-weight: bold;
+    background-color:rgb(232, 238, 232);
+}
+img{
+    width:1000px;
+    height:75px;
+}

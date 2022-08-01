@@ -1,0 +1,21 @@
+<br><br><br>
+<header class="header-desktop">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="header-wrap">
+                <form class="form-header" #spForm="ngForm" (submit)="search()" method="GET">
+                    <input class="au-input au-input-xl" type="text" name="name"
+                        placeholder="Search for Furniture by its name..." [(ngModel)]="searchname"/>
+                    <button class="au-btn-submit" type="submit">
+                        Search
+                    </button>
+
+                    <button class="add" type="button" (click)="addProduct()">Add Items</button>
+                    <button class="out" type="button" (click)="Logout()">LOGOUT</button>
+                </form>
+               
+            </div>
+            <div class="account-wrap"></div>
+        </div>
+    </div>
+</header>

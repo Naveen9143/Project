@@ -1,0 +1,110 @@
+<div class="page-wrapper">
+    <app-bedroomcategory></app-bedroomcategory>
+
+    <div class="page-container">
+        <header class="header-desktop">
+            <div class="section-content section-content-p30">
+                <div class="container-fluid">
+                    <div class="header-wrap">
+                        <form class="form-header" #spForm="ngForm" (submit)="search()" method="GET">
+                            <input class="au-input au-input-xl" type="text" name="name"
+                                placeholder="Search for Furniture by its name..." [(ngModel)]="searchname"/>
+                            <button class="au-btn-submit" type="submit">
+                                Search
+                            </button>
+       
+                            <button class="add" type="button" routerLink="cart">Cart</button>
+                            <button class="out" type="button" routerLink="">LOGOUT</button>
+                        </form>
+                       
+                    </div>
+                    <div class="account-wrap"></div>
+                </div>
+            </div>
+        </header>
+
+<br><br><br>
+
+        <div class="container">
+            <div class="row">
+                <ng-container *ngFor="let e of bedroom">
+                    <div class="card col-md-3">
+                        <img src="{{e.imageurl}}" width="400px" height="200px" alt="assets\Furniture BackGround Image.jpg">
+                        <h5 style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch">{{e.name}}</h5>
+                        <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch">{{e.description}}</p>
+                        <p><strong>Price:</strong>{{e.price |currency:'INR'}}</p>
+                        <button  id="update" class="my-button" (click)="add(e)">AddToCart</button>
+                        <button  id="delete" class="my-button"  (click)="buy(e)">BuyNow</button>
+                    </div>
+                   
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="row row-cols-auto">
+                <table class="table table-bordered">
+
+                <thead>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>price</th>  
+                    <th>Action</th>
+                </thead>
+
+                
+                <tr *ngFor="let e of bedroom">
+                    <td>{{e.name}}</td>
+                    <td>{{e.description}}</td>
+                    <td>
+                        <img src="{{e.imageurl}}" alt="assets\bathroom\bathroom-7.jpg" width="150px" height="100px">
+                    </td>
+                    <td>{{e.price | currency:'INR'}}</td>
+                    <td>
+                        &nbsp;&nbsp;
+                        <button  type="submit" id="update"  (click)="add(e)">AddToCart</button>
+                        &nbsp;&nbsp;
+                        <button type="submit" id="Delete"  (click)="buy(e)">BuyNow</button>
+                    </td>
+                                 
+                </tr>
+             </table>
+            </div>
+            </div>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     -->

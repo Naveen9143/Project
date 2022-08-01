@@ -1,0 +1,22 @@
+.add{
+    padding: 10px;
+    margin-left: 600px;
+    background-color:#eaebf0;
+    color:black;
+    font-weight: bold;
+    
+}
+.add:hover{
+    background-color: blue;
+}
+
+.header-desktop{
+    background-color:rgb(122, 216, 211);
+}
+.out{
+    margin-left:10px;
+    padding:10px;
+    background-color: Red;
+    color:white;
+    font-weight:bold;
+}

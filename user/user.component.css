@@ -1,0 +1,100 @@
+
+td:hover{
+    color:#078cf2;
+ }
+ 
+ #update:hover{
+     background-color:rgb(52, 253, 52);
+ }
+ #Delete:hover{
+    background-color:red;
+ }
+ .header-desktop
+ {
+     background-color: #56c3c7;
+ }
+
+ .add{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 600px;
+    background-color:#080cfc;
+    color:white;
+    font-weight: bold;
+    
+}
+.header-desktop{
+    background-color:#071a33;
+}
+.out{
+    margin-left:10px;
+    padding:10px;
+    background-color: Red;
+    color:white;
+    font-weight:bold;
+}
+
+
+
+.card a:hover{
+    width:300px;
+    height: 300px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+ }
+ .card img:hover{
+    transition: 0.3s ease-in-out;
+    transform:scale(1.1);
+ }
+ /* .container{
+    margin-top: 10px;
+ } */
+ .card img{
+    width:300px;
+    height: 300px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+ }
+ .card{
+    padding :10px;
+    margin:25px;
+ }
+ #update{
+    display: inline-block;
+    margin: 5px; /* space between buttons */
+    background: #0256f1; /* background color */
+    color:white; /* text color */
+    font-size: 1.5em;
+    font-family: ‘Georgia’, serif;
+    font-style: italic;
+    border-radius: 50px; /* rounded corners */
+    padding: 8px 16px; /* space around text */
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+ 
+ }
+ #update:hover {
+    background: rgb(41, 93, 236);
+    color: #2a37e4;
+ }
+ #delete{
+    display: inline-block;
+    margin: 5px; /* space between buttons */
+    background: #f00b0b; /* background color */
+    color:white; /* text color */
+    font-size: 1.5em;
+    font-family: ‘Georgia’, serif;
+    font-style: italic;
+    border-radius: 50px; /* rounded corners */
+    padding: 8px 16px; /* space around text */
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+ }
+ #delete:hover{
+    background: rgb(209, 1, 1);
+    color: #f30606;   
+ 
+ }

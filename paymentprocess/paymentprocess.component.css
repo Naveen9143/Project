@@ -1,0 +1,20 @@
+img{
+    width:1200px;
+    height:600px;
+}
+#shop{
+   color:black;
+   background-color: greenyellow;
+   font-weight: bold;
+   margin-top: 10px;
+   padding:10px;
+}
+#shop:hover{
+    background-color: blue;
+}
+#logout{
+    margin-left: 1000px;
+    margin-top: 0;
+    padding:10px;
+    background-color: red;
+}
